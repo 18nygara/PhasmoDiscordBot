@@ -1,5 +1,5 @@
 const Discord = require('discord.js');
-const config = require('./config.json');
+const {prefix, token} = require('./config.json');
 const client = new Discord.Client();
 
 const high_priority = new Map();
@@ -12,8 +12,8 @@ client.once('ready', () => {
 });
 
 client.on('message', message => {
-	if (message.content === "!challenges") {
-		message.channel.send("List of Challenges --\n\n Item Lockout - !lockout")
+	if (message.content.startsWith('${prefix}challenges')) {
+		message.channel.send("-- List of Challenges --\n\n Item Lockout - !lockout")
 	} else if (message.content === "!lockout") {
 		message.channel.send(item_lockout());
 	}
@@ -103,4 +103,4 @@ function item_lockout() {
 	return message.substr(0,message.length - 2);
 }
 
-client.login(config.token);
+client.login(token);
