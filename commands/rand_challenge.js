@@ -13,7 +13,7 @@ module.exports = {
     if (challenge === 'Lockout') {
       lockout.execute('lockout', args);
     } else if (challenge === 'rpg') {
-      lockout.execute('rpg', Math.floor(Math.random() * 5));
+      rpg.execute('rpg', Math.floor(Math.random() * 5));
     } else {
       message.channel.send(challenge);
       if (args.length && args[0] === '-map') {
