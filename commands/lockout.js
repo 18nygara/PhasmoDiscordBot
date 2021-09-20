@@ -20,6 +20,7 @@ module.exports = {
     high_priority.set("Video Camera", 0);
     high_priority.set("Photo Camera", 0);
     high_priority.set("Strong Flashlight", 0);
+    high_priority.set("D.O.T.S. Sensor", 0);
     mid_priority.set("Lighter", 0);
     mid_priority.set("Head Mounted Camera", 0);
     mid_priority.set("Crucifix", 0);
