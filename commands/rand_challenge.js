@@ -3,7 +3,7 @@ const rpg = require("./rpg");
 const maps = require('./map.js');
 
 const rand_challenges = ["No Evidence", "Lockout", "Deaf Leading the Blind", "Lockdown",
-  "Must Talk During Hunts", "Photo Randomizer", "Speedrun", "No Audio", "rpg"];
+  "Must Talk During Hunts", "Photo Randomizer", "Speedrun", "No Audio", "rpg", "RPG Randomizer"];
 
 module.exports = {
   name: 'random',

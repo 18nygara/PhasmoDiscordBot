@@ -1,5 +1,4 @@
-const maps = ["Left Map", "Right Map", "Top Map", "Bottom Map", "Middle Map",
-  "Your Choice", "Biggest Map", "Smallest Map"];
+const maps = ["Bleasdale Farmhouse", "Edgefield Street House", "Grafton Farmhouse", "Ridgeview Road House", "Tanglewood Street House", "Willow Street House", "Brownstone High School", "Prison", "Maple Lodge Campsite", "Asylum"];
 
 module.exports = {
   name: 'map',
