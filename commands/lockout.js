@@ -21,7 +21,6 @@ module.exports = {
     high_priority.set("Photo Camera", 0);
     high_priority.set("Strong Flashlight", 0);
     high_priority.set("D.O.T.S. Sensor", 0);
-    mid_priority.set("Lighter", 0);
     mid_priority.set("Head Mounted Camera", 0);
     mid_priority.set("Crucifix", 0);
     mid_priority.set("UV Flashlight", 0);
@@ -63,7 +62,7 @@ function item_lockout() {
 
 	let message = "";
 	message += "Bone Found: " + getItem(high_priority) + "\n";
-	message += "Ouija Found: " + getItem(helpful_priority) + "\n\n";
+	message += "Cursed Object Found: " + getItem(high_priority) + "\n\n";
 	message += "1st Evidence Found: " + getItem(high_priority) + "\n";
 	message += "2nd Evidence Found: " + getItem(high_priority) + "\n";
 	message += "3rd Evidence Found: " + getItem(helpful_priority) + "\n\n";
